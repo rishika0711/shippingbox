@@ -58,3 +58,6 @@ Australia: 50.09 INR per kg
 The shipping table dynamically updates with the new data.
 If there is no data, a message is displayed: "Table has no data".
 
+
+deploy link = https://shippingboxmanagment.netlify.app/
+
