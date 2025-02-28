@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Shipping Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple **Shipping Management System** built using **React** and **Context API**. It allows users to add shipping boxes with details like receiver name, weight, color, destination, and calculates the cost based on predefined rates.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+✅ **Add Shipping Box** - Users can input box details and add them to the shipping table.  
+✅ **Real-Time Color Preview** - Selected color is displayed next to the input field.  
+✅ **Cost Calculation** - The cost is calculated automatically based on the weight and destination.  
+✅ **Table View** - Displays all added boxes in a structured table.  
+✅ **Form Validation** - Ensures all required fields are filled before submitting.  
+✅ **Context API for State Management** - The app uses React Context API to manage the shipping data globally.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Installation & Setup
 
-### `npm test`
+1. **Clone the repository**  
+  
+   git clone https://github.com/your-username/shipping-management.git
+   cd shipping-management
+2. **Install dependencies Run the project**
+npm install
+Run the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Run the project**
+npm start
 
-### `npm run build`
+📌 How It Works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1 Adding a Box
+Fill in the Receiver Name, Weight, Color, and Destination fields.
+Click Add Box to store the data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2️ Color Selection
+The color input field allows users to select a color.
+A small color preview box displays the selected color in real-time.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3 Shipping Cost Calculation
 
-### `npm run eject`
+The cost is calculated using:
+ini
+Copy
+Edit
+Cost = Weight (kg) × Destination Rate (INR)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Example Rates:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Sweden: 7.35 INR per kg
+China: 11.53 INR per kg
+Brazil: 15.63 INR per kg
+Australia: 50.09 INR per kg
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4️ Displaying Data
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The shipping table dynamically updates with the new data.
+If there is no data, a message is displayed: "Table has no data".
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
